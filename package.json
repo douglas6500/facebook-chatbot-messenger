@@ -1,0 +1,24 @@
+{
+  "name": "fbbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "aimlinterpreter": "^0.1.7",
+    "facebook-chat-api": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/boudeffa/fbbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/boudeffa/fbbot/issues"
+  },
+  "homepage": "https://gitlab.com/boudeffa/fbbot#README"
+}
