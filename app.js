@@ -4,11 +4,10 @@ var aimlInterpreter = require('aimlinterpreter');
 var aimlInterpreter = new aimlInterpreter(
   {name:'Claude'},
   {age: '26'},
-  {website:'truc'}
+  {website:'https://www.facebook.com/profile.php?id=100015842524768'}
 );
 
-aimlInterpreter.loadAIMLFilesIntoArray(['./dialogs/french_aiml_publish/atomique_ed.aiml','./dialogs/french_aiml_publish/comment_ed.aiml']);
-//,'./dialogs/french_aiml_publish/comment_ed.aiml','./dialogs/french_aiml_publish/estu_ed.aiml','./dialogs/french_aiml_publish/humour_ed.aiml','./dialogs/french_aiml_publish/ou_ed.aiml','./dialogs/french_aiml_publish/pourquoi_ed.aiml','./dialogs/french_aiml_publish/quand_ed.aiml','./dialogs/french_aiml_publish/quel_ed.aiml','./dialogs/french_aiml_publish/questceque_ed.aiml','./dialogs/french_aiml_publish/qui_ed.aiml','./dialogs/french_aiml_publish/srai_ed.aiml','./dialogs/french_aiml_publish/that_ed.aiml']);
+aimlInterpreter.loadAIMLFilesIntoArray(['./dialogs/basic.aiml']);
 
 var callback = function(answer, wildCardArray, input){
     console.log(answer + ' | ' + wildCardArray + ' | ' + input);
@@ -26,7 +25,7 @@ function sendAIMLMessage(message){
 }
 
 // Create simple echo bot
-login({email: "xxx@mail.com", password: "abc123"}, function callback (err, api) {
+login({email: "xyz@mail.com", password: "abc123"}, function callback (err, api) {
 if(err) return console.error(err);
 
     api.setOptions({listenEvents: true});
